@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,400;1,700&display=swap");
+* {
+  box-sizing: border-box;
+}
+.line {
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  margin: 30px 0px;
+}
+.wrapper {
+  max-width: 1000px;
+}
+.title {
+  margin: 30px 0px;
+  text-align: center;
+}
+.accordion {
+}
+.accordionelement {
+}
+.accordiontitle {
+  color: white;
+}
+.memshapka {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.membutton {
+  font-size: 2rem;
+  background: none;
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+.membot {
+  display: flex;
+  justify-content: space-between;
+}
+html {
+  font-style: italic;
+  font-size: 15px;
+  font-family: "Prompt", sans-serif;
+}
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+button {
+  outline: 0;
+  border: none;
+  cursor: pointer;
+}
+body {
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
