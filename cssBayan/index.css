@@ -81,23 +81,10 @@ body {
 .accordionimg:active {
   outline: 5px solid rgb(220, 139, 212);
 }
-.accordion:hover .membutton {
-  display: block;
-}
-.accordion:hover .memshapka {
-  color: rgb(45, 45, 83);
-}
 
 .memcheckbox {
   appearance: none;
   display: none;
-}
-.accordionelement:hover > .membot {
-  height: 600px;
-}
-
-.accordionelement:hover .membutton {
-  transform: rotate(45deg);
 }
 
 .memcheckbox:checked + .memshapka > .membutton {
@@ -128,6 +115,20 @@ body {
 
   100% {
     color: rgb(99, 99, 205);
+  }
+}
+@media not all and (hover: none) {
+  .accordion:hover .membutton {
+    display: block;
+  }
+  .accordionelement:hover .membutton {
+    transform: rotate(45deg);
+  }
+  .accordionelement:hover > .membot {
+    height: 600px;
+  }
+  .accordion:hover .memshapka {
+    color: rgb(45, 45, 83);
   }
 }
 
