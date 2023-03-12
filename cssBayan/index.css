@@ -29,17 +29,20 @@ body {
   margin: 30px 0px;
 }
 .wrapper {
-  max-width: 1000px;
+  width: 1200px;
 }
 .title {
+  color: white;
   margin: 30px 0px;
   text-align: center;
 }
 .accordion {
   user-select: none;
 }
+.accordionimg {
+}
 .accordionelement {
-  width: 680px;
+  width: 100%;
 }
 
 .memshapka {
@@ -71,6 +74,7 @@ body {
 }
 .accordionelement:hover > .membot {
   height: 600px;
+  align-items: center;
 }
 
 .accordionelement:hover .membutton {
@@ -105,5 +109,25 @@ body {
 
   100% {
     color: rgb(99, 99, 205);
+  }
+}
+
+/*tabletversion*/
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 600px;
+    height: 100%;
+  }
+}
+
+/*mobileversion*/
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 300px;
+  }
+  .accordionimg {
+    width: 100%;
+    height: 70%;
   }
 }
