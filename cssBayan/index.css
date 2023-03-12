@@ -36,13 +36,12 @@ body {
   text-align: center;
 }
 .accordion {
+  user-select: none;
 }
 .accordionelement {
   width: 680px;
 }
-.accordiontitle {
-  color: white;
-}
+
 .memshapka {
   cursor: pointer;
   display: flex;
@@ -55,12 +54,12 @@ body {
   background: none;
   width: 30px;
   height: 30px;
-  color: white;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 .membot {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   height: 0;
@@ -74,6 +73,37 @@ body {
   height: 600px;
 }
 
+.accordionelement:hover .membutton {
+  transform: rotate(45deg);
+}
+
 .memcheckbox:checked + .memshapka > .membutton {
   transform: rotate(45deg);
+}
+
+.memcheckbox:checked ~ .memshapka {
+  color: rgb(45, 45, 83);
+}
+
+.memcheckbox:checked ~ .membot {
+  height: 600px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: rgb(45, 45, 83);
+  animation: copyright 3s infinite;
+}
+
+@keyframes copyright {
+  0% {
+    color: rgb(45, 45, 83);
+  }
+
+  100% {
+    color: rgb(99, 99, 205);
+  }
 }
