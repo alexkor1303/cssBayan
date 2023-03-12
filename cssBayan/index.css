@@ -38,31 +38,42 @@ body {
 .accordion {
 }
 .accordionelement {
+  width: 680px;
 }
 .accordiontitle {
   color: white;
 }
 .memshapka {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 .membutton {
+  display: flex;
   font-size: 2rem;
   background: none;
   width: 30px;
   height: 30px;
   color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .membot {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 0;
+  transition: height 0.5s linear;
 }
 .memcheckbox {
   appearance: none;
   display: none;
 }
-.memcheckbox:checked + .membot {
+.accordionelement:hover > .membot {
   height: 600px;
+}
+
+.memcheckbox:checked + .memshapka > .membutton {
+  transform: rotate(45deg);
 }
